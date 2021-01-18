@@ -1,0 +1,62 @@
+.donation {
+  padding-top: 8rem;
+  padding-bottom: 9.8rem;
+  span {
+    display: block;
+  }
+}
+
+.donation__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.donation__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donation__content {
+  margin-left: 3rem;
+  max-width: 38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.donation__title {
+  color: $color-dark-l;
+  @include h3;
+}
+
+.donation__subtitle {
+  margin-top: 2rem;
+  color: $color-dark-l;
+  @include h5;
+}
+
+.donation__credit-card {
+  display: flex;
+  background: $color-primary;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+.donation__credit-number {
+  padding-left: 1.5rem;
+  color: $color-dark-l;
+  @include h4;
+}
+.donation__credit-number:hover {
+  color: $color-dark-3xl;
+}
+
+.donation__text {
+  display: inline-block;
+  color: $color-dark-m;
+  margin-top: 2rem;
+  @include paragraph-s;
+}

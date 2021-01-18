@@ -1,0 +1,70 @@
+.footer {
+  background: $footer-gradient-background;
+  padding-top: 4rem;
+
+  span {
+    display: inline-block;
+  }
+
+  .footer__content {
+    display: flex;
+  }
+
+  .footer__information {
+    flex: 1;
+    display: flex;
+  }
+
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+
+    .footer__title {
+      @include h3;
+      color: $color-light-xl;
+    }
+
+    .contacts__mail, .contacts__phone {
+      display: flex;
+      align-items: center;
+
+      .mail, .phone {
+        @include h4;
+        color: $color-primary;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+
+
+  .footer__title {
+    @include h3;
+    color: $color-light-xl;
+  }
+
+  .contacts__location1, .contacts__location2 {
+    display: flex;
+    align-items: center;
+
+    .address1, .address2 {
+      @include h4;
+      color: $color-primary;
+      margin-left: 2rem;
+    }
+
+    .address1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
