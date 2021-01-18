@@ -1,0 +1,47 @@
+.help {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+
+  span {
+    display: block;
+  }
+}
+
+.help__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.help__title {
+  @include h3;
+  color: $color-dark-l;
+  text-align: center;
+}
+
+.help__tool {
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12rem;
+  row-gap: 5.5rem;
+}
+
+.tool__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tool__title {
+  @include h4;
+  color: $color-dark-l;
+  padding-top: 2.3rem;
+  align-self: center;
+  text-align: center;
+}
+
+

@@ -1,0 +1,61 @@
+.promo {
+  background: $start-screen-gradient-background;
+}
+
+.promo__wrapper {
+  display: flex;
+  padding-top: 12rem;
+  justify-content: space-between;
+}
+
+.promo__wrapper > img {
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .promo__wrapper {
+    padding: 6rem 4rem 0 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .promo__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.promo__content {
+  padding-top: 22.3rem;
+}
+
+.promo__title {
+  @include h2;
+  color: $color-light-xl;
+  width: 31rem;
+}
+
+.promo__subtitle {
+  @include paragraph-l;
+  color: $color-dark-s;
+  margin-top: 4.2rem;
+  width: 46rem;
+}
+
+.promo__button {
+  font: {
+    style: normal;
+    weight: normal;
+    size: 1.7rem;
+    family: 'Georgia', sans-serif;
+  }
+  margin-top: 4.2rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-3xl;
+  transition-duration: 0.5s;
+}
+
+.promo__button:hover {
+  cursor: pointer;
+}

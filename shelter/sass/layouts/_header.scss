@@ -1,0 +1,64 @@
+.header {
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  top: 6rem;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__title {
+  color: $color-primary;
+  @include logo_title;
+}
+
+.logo__subtitle {
+  color: $color-light-xl;
+  @include logo_subtitle;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.header__navigation {
+  display: flex;
+  width: 44.3rem;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  @include paragraph-l;
+  color: $color-light-s;
+  padding-bottom: .3rem;
+  &_active {
+    border-bottom: solid .3rem $color-primary;
+  }
+  &_disabled {
+    color: $color-dark-s;
+    &:hover {
+      color: $color-light-s;
+    }
+  }
+}
+
+.another__link {
+  color: $color-dark-s;
+  cursor: default;
+}
+
+
+
+

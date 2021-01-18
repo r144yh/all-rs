@@ -1,0 +1,58 @@
+.pets__header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  position: sticky;
+  background: $color-light-xl;
+  min-height: 12rem;
+  top: 0;
+  z-index: 2;
+}
+
+
+.pets__header__wrapper {
+  @extend .header__wrapper;
+  min-height: 12rem;
+}
+
+.pets__logo__title {
+  @extend .logo__title;
+  color: $color-dark-l;
+
+  &:hover {
+    color: $color-dark-3xl;
+  }
+}
+
+.pets__navigation__link {
+  @extend .navigation__link;
+  color: $color-dark-3xl;
+}
+
+.pets__logo__subtitle {
+  @extend .logo__subtitle;
+  color: $color-dark-3xl;
+  display: inline-block;
+  letter-spacing: 0.13rem;
+}
+
+.pets__navigation__link_active {
+  @extend .navigation__link_active;
+  border-bottom: solid .3rem $color-primary;
+}
+
+.pets__navigation__link_disabled {
+  @extend .navigation__link_disabled;
+  color: $color-dark-l;
+
+  &:hover {
+    color: $color-dark-3xl;
+  }
+}
+
+.pets__another__link {
+  color: $color-dark-l;
+  cursor: default;
+}
+
